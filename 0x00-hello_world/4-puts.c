@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main-prog: displaty "Programming is like building a multilingual puzzle
+ * main-prog: display "Programming is like building a multilingual puzzle
  * Return: 0 means success
  */
 int main(void)
