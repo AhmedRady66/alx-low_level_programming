@@ -1,11 +1,11 @@
 #include <unistd.h>
 
 /**
- * main - prog: display without using fprint or puts.
- * Return: 1 if success
+ * main - Entry point of the program
+ * Return: Always 1 (success)
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 59);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
