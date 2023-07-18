@@ -17,6 +17,6 @@ int main(void)
 		}
 	}
 
-	printf("%d", result);
+	printf("%d\n", result);
 	return (0);
 }
