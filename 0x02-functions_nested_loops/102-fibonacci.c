@@ -7,8 +7,8 @@
 int main(void)
 {
 	int i;
-	unsigned long int t1 = 1, t2 = 2;
-	unsigned long int next_term = t1 + t2;
+	unsigned long t1 = 1, t2 = 2;
+	unsigned long next_term = t1 + t2;
 
 	printf("%lu, %lu, %lu, ", t1, t2, next_term);
 
