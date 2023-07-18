@@ -7,20 +7,20 @@
 int main(void)
 {
 	int i;
-	unsigned long t1 = 0, t2 = 1;
-	unsigned long next_term = t1 + t2;
-
-	printf("%lu, %lu, %lu, ", t1, t2, next_term);
+	unsigned long t1 = 0, t2 = 1, next_term;
 
 	for (i = 0; i < 50; i++)
 	{
+		next_term = t1 + t2;
+		printf("%lu", next_term);
+
 		t1 = t2;
 		t2 = next_term;
-		next_term = t1 + t2;
+
 		if (i == 49)
-			printf("%lu\n", next_term);
+			printf("\n");
 		else
-			printf("%lu, ", next_term);
+			printf(", ");
 	}
 	return (0);
 }
