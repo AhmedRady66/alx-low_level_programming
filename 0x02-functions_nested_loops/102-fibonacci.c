@@ -20,7 +20,7 @@ int main(void)
 		if (i == 49)
 			printf("%d\n", next_term);
 		else
-			printf("d, ", next_term);
+			printf("%d, ", next_term);
 	}
 	return (0);
 }
