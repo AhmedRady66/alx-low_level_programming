@@ -7,10 +7,10 @@
 int main(void)
 {
 	int i;
-	int t1 = 1, t2 = 2;
-	int next_term = t1 + t2;
+	unsigned long int t1 = 1, t2 = 2;
+	unsigned long int next_term = t1 + t2;
 
-	printf("%d, %d, %d, ", t1, t2, next_term);
+	printf("%llu, %llu, %llu, ", t1, t2, next_term);
 
 	for (i = 0; i < 50; i++)
 	{
@@ -18,9 +18,9 @@ int main(void)
 		t2 = next_term;
 		next_term = t1 + t2;
 		if (i == 49)
-			printf("%d\n", next_term);
+			printf("%llu\n", next_term);
 		else
-			printf("%d, ", next_term);
+			printf("%llu, ", next_term);
 	}
 	return (0);
 }
