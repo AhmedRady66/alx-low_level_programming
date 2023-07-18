@@ -10,15 +10,17 @@ int main(void)
 	int t1 = 1, t2 = 2;
 	int next_term = t1 + t2;
 
-	printf("%d, %d, ", t1, t2);
+	printf("%d, %d, %d, ", t1, t2, next_term);
 
-	for (i = 3; i < 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		t1 = t2;
 		t2 = next_term;
 		next_term = t1 + t2;
-		printf("%d, ", next_term);
+		if (i == 49)
+			printf("%d\n", next_term);
+		else
+			printf("d, ", next_term);
 	}
-
 	return (0);
 }
