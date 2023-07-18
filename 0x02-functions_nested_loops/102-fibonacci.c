@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-	unsigned long t1 = 1, t2 = 2;
+	unsigned long t1 = 0, t2 = 1;
 	unsigned long next_term = t1 + t2;
 
 	printf("%lu, %lu, %lu, ", t1, t2, next_term);
