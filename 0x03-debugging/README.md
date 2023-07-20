@@ -1,1 +1,1 @@
-This is how to debugg a c program
+This is C - Debugging
