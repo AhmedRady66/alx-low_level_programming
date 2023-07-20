@@ -1,25 +1,24 @@
 #include "main.h"
 
 /**
- * print_diagonal -  function that draws a diagonal line on the terminal.
- * @n: input function.
+ * print_diagonal - check the code.
+ *@n: variable
  */
 void print_diagonal(int n)
 {
-	int i, j;
+	int c, i;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
+	for (c = 0; c < n; c++)
 	{
-		for (i = 1; i <= n; i++)
+		for (i = 0; i < c; i++)
 		{
-			for (j = 1; j <= i; j++)
-			{
-				_putchar(' ');
-			}
+			_putchar(32);
+		}
 			_putchar(92);
 			_putchar('\n');
-		}
 	}
+		if (n <= 0)
+		{
+			_putchar('\n');
+		}
 }
