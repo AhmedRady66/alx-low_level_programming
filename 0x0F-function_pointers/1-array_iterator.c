@@ -8,12 +8,13 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (action != NULL || array != NULL)
+	if (action == NULL || array == NULL)
 	{
-		while (size-- > 0)
-		{
-			action(*array);
-			array++;
-		}
+		return;
+	}
+	while (size-- > 0)
+	{
+		action(*array);
+		array++;
 	}
 }
