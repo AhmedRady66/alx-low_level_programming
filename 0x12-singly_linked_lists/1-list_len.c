@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - prints linked list
+ * list_len - prints linked list
  * @h: pointer to first node
  * Return: size
  */
