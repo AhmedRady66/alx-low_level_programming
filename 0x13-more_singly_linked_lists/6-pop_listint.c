@@ -7,11 +7,14 @@
  */
 int pop_listint(listint_t **head)
 {
-	listint_t *newNode = malloc(sizeof(listint_t));
+	listint_t *current;
+	int value;
 
-	if (!head || !newNode)
+	if (!head || !head)
 		return (0);
-	newNode = *head;
-	*head = newNode->next;
-	return (newNode->n);
+	current = (*head)->next;
+	value = (*head)->n;
+	free(*head);
+	*head = current;
+	return (value);
 }
