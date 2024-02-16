@@ -42,7 +42,7 @@ hash_node_t *make_hash_node(const char *key, const char *value)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_table_t *hash_node, *tmp;
+	hash_node_t *hash_node, *tmp;
 	unsigned long int index;
 	char *new_value;
 
