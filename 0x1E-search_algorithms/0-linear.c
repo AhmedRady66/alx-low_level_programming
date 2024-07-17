@@ -6,7 +6,7 @@
  * @size: size of the array.
  * @value: search value.
  *
- * Return: 0 success
+ * Return: 0 success.
  */
 int linear_search(int *array, size_t size, int value)
 {
